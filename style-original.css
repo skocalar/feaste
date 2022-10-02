@@ -1,0 +1,319 @@
+@import url('../css/fonts.css');
+@import url('../js/jquery.3.5.1.min.js');
+
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+    --text-gray: #3F4954;
+    --yellow: #FFEC1F;
+    --blue: #299AE0;
+
+    --PoppinsNormal: 'PoppinsNormal';
+    --PoppinsBold: 'PoppinsBold';
+}
+
+/*-------------global classes-------------*/
+
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--PoppinsBold);
+    font-size: 2.5rem;
+}
+
+/*h2{
+    font-family: var(--PoppinsBold);
+    position: relative;
+    font-size: 2.5rem;
+    z-index: 1;
+    overflow: hidden;
+    text-align: left;
+    padding-left: 3rem;
+}
+
+.bigboi{
+    font-family: var(--PoppinsBold);
+    font-size: 2.5rem;
+    padding-left: 3rem;
+}
+
+.smallboi{
+    font-family: var(--PoppinsNormal);
+    font-size: 1.3rem;
+    text-align: right;
+    padding-left: 24.65rem;
+    color: var(--text-gray);
+}
+
+.smallboi:hover{
+    color: var(--text-gray);
+} */
+
+h3{
+    font-family: var(--PoppinsNormal);
+    font-size: 1.3rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    font-family: var(--PoppinsNormal);
+    cursor: pointer;
+}
+
+span{
+    font-family: var(--PoppinsNormal);
+    font-size: 0.8rem;
+}
+
+.container{
+    margin: 0 2vw;
+}
+
+/*.one{
+    border: none;
+    height: 3px;
+    background: #dddddd;
+    margin: 48px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    margin-right: 40px;
+}
+
+/*--------x-----global classes------x-------*/
+
+/*----------------navbar---------------*/
+
+.nav{
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.collapse{
+    height: 25rem;
+}
+
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--PoppinsNormal);
+
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: #e9ecef;
+}
+
+.nav .nav-brand a{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--PoppinsBold);
+}
+
+/*----------x------navbar---------x-------*/
+
+/*---------------- Main Content--------------*/
+
+/*----------Site Title-----------*/
+
+/*main .site-title{
+    background: url('../assets/LabHeader.png');
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background{
+    padding-top: 6rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+main.site-title h1, h3{
+    margin: 0.3rem;
+}
+
+main .site-title .btn{
+    margin: 2rem;
+    background: #ffffff;
+}
+
+main .site-title .btn:hover{
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+/*-----x-----Site Title------x-----*/
+
+
+/*--------------Table------------*/
+/*.leftside, .rightside{
+    height: 100vh;
+    width: 100%;
+}
+
+.leftside{
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60vw;
+    height: 100vh;
+}
+
+.rightside{
+    background: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 40vw;
+}*/
+/*-------x-------Table-------x-----*/
+
+/*------------Blog Carousel----------*/
+
+/*main .title-span{
+    background: #fff;
+    font-family: var(--PoppinsBold);
+    position: relative;
+    font-size: 2.5rem;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+
+main .blog .blog-post{
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+}
+
+main .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+}
+
+main .blog-content .blog-title{
+    padding: 1.4rem 0;
+}
+
+main .blog-content .btn-blog{
+    padding: 0.5rem 1.2rem;
+    background: var(--blue);
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
+main .blog-content span{
+    display: block;
+    padding: 0.4rem 1.2rem;
+}
+
+section .container .owl-nav{
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+}
+
+main .owl-nav .owl-prev .owl-nav-prev,
+main .owl-nav .owl-next .owl-nav-next{
+    color: var(--blue);
+    background: transparent;
+    font-size: 2rem;
+}
+
+main .owl-theme .owl-nav [class*='owl-']:hover{
+    background: transparent;
+    color: var(--blue);
+}
+
+main .owl-theme .owl-nav [class*='owl-']{
+    outline: none;
+}
+
+/*------x------Blog Carousel-----x-----*/
+
+/*---------x------- Main Content-------x-------*/
+
+/*          Viewport less than or equal to 750px          */
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+    .nav .toggle-collapse{
+        display: initial;
+    }
+    /*h2{
+        all: revert;
+        text-align: center;
+    }
+}
+
+/*     x     Viewport less than or equal to 750px    x      */
